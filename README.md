@@ -337,102 +337,159 @@ console.log(`Request from: ${request.headers.get('cf-connecting-ip')}`)
 
 ---   
   
-# API 健康报告（每日自动检测API状态）
+IPV4/IPV6 TVBOX 电视直播点播源收集
+目录
+直播源
+点播源
+EPG
+112114
+ERW
+推荐软件
+空壳软件
+自带源软件
+电视浏览器
+GitHub镜像
+官方电视直播
+第三方电视直播
+直播源
+名称	地址	类型	EPG	台标
+YanG-1989	https://tv.iill.top/m3u/Gather	IPV4	✔️	✔️
+vbskycn	https://live.zbds.org/tv/iptv6.m3u	IPV6	✔️	✔️
+vbskycn	https://live.zbds.org/tv/iptv4.m3u	IPV4	✔️	✔️
+Guovin	https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u	IPV6	✔️	✔️
+Guovin	https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u	IPV4	✔️	✔️
+fanmingming	https://live.fanmingming.cn/tv/m3u/ipv6.m3u	IPV6	✔️	✔️
+YueChan	https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/IPTV.m3u	IPV4	❌	✔️
+Kimentanm	https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u	IPV4	✔️	❌
+BurningC4	https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u	IPV4	❌	❌
+zwc456baby	https://raw.githubusercontent.com/zwc456baby/iptv_alive/refs/heads/master/live.m3u	IPV4	✔️	✔️
+ChinaIPTV	https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8	IPV4	❌	✔️
+myIPTV	https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u	IPV4	✔️	✔️
+myIPTV	https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u	IPV6	✔️	✔️
+传说引导页	http://tttttt.tttttttttt.top/jk.txt	IPV4	❌	❌
+iptv-sources	https://m3u.ibert.me/fmml_ipv6.m3u	IPV6	✔️	✔️
+joevess	https://raw.githubusercontent.com/joevess/IPTV/main/m3u/iptv.m3u	IPV4	❌	✔️
+Ftindy	https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/IPV6.m3u	IPV4	✔️	✔️
+AKTV	https://aktv.space/live.m3u	IPV4	✔️	❌
+直播源有人卡有人不卡都是正常的，请测试后选择适合自己地区的直播源。20250115突然大部分IPV6直播源只能本省看，好多项目IPV6源也替换成IPV4源，现在看直播可试试“自带源软件”下几个软件。也可以先输入点播源，这样会自动填写点播源自带的直播源。
 
-## API 状态（最近更新：2026-02-22 01:33 CST）
+其他直播源
 
-- 总 API 数量：77
-- 成功 API 数量：74
-- 失败 API 数量：3
-- 平均可用率：96.2%
-- 完美可用率（100%）：62 个
-- 高可用率（80%-99%）：11 个
-- 中等可用率（50%-79%）：2 个
-- 低可用率（<50%）：2 个
+iptv共享系统（TG获取密钥，稳定服务收费）
+epg.pw免费电视节目表
+Pixman（普通人别折腾）
+stream link（資源不支持中國大陸使用）
+IPV6是否开启查询：https://testipv6.com
 
-<div style="font-size: 11px;">
+直播源检测有效性：https://github.com/zhimin-dev/iptv-checker
 
-<!-- API_TABLE_START -->
-| 状态 | 资源名称 | 地址 | API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |
-|------|---------|-----|-----|---------|---------:|--------:|-------:|--------------|
-| ✅ | 🎬-爱奇艺- | [Link](https://iqiyizyapi.com) | [Link](https://iqiyizyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬360 资源 | [Link](https://360zy.com) | [Link](https://360zyzz.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬iKun资源 | [Link](https://ikunzy.com) | [Link](https://ikunzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬优质资源 | [Link](https://1080zyk4.com) | [Link](https://api.yzzy-api.com/inc/apijson.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬光速资源 | [Link](https://api.guangsuapi.com) | [Link](https://api.guangsuapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬最大点播 | [Link](https://zuidazy.co) | [Link](https://zuidazy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬最大资源 | [Link](https://zuida.xyz) | [Link](https://api.zuidapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬卧龙资源 | [Link](https://wolongzyw.com) | [Link](https://wolongzyw.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬如意资源 | [Link](https://www.ryzyw.com) | [Link](https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬快车资源 | [Link](https://kuaichezy.com) | [Link](https://caiji.kuaichezy.org/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬无尽影视 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬无尽资源 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬旺旺短剧 | [Link](https://wwzy.tv) | [Link](https://wwzy.tv/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬旺旺资源 | [Link](https://api.wwzy.tv) | [Link](https://api.wwzy.tv/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬暴风资源 | [Link](https://bfzy.tv) | [Link](https://bfzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬极速资源 | [Link](https://jszyapi.com) | [Link](https://jszyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬樱花资源 | [Link](https://yhzy.cc) | [Link](https://m3u8.apiyhzy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬猫眼资源 | [Link](https://www.maoyanzy.com) | [Link](https://api.maoyanapi.top/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬电影天堂 | [Link](http://caiji.dyttzyapi.com) | [Link](http://caiji.dyttzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬百度云zy | [Link](https://bdzy1.com) | [Link](https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬红牛资源 | [Link](https://www.hongniuzy.com) | [Link](https://www.hongniuzy2.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬索尼资源 | [Link](https://suonizy.net) | [Link](https://suoniapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬艾旦影视 | [Link](https://lovedan.net) | [Link](https://pz.168188.dpdns.org/?url=https://lovedan.net/api.php/provide/vod) | ✅ | 27 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬茅台资源 | [Link](https://mtzy.me) | [Link](https://caiji.maotaizy.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬虎牙资源 | [Link](https://www.huyaapi.com) | [Link](https://www.huyaapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬豪华资源 | [Link](https://www.haohuazy.com) | [Link](https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬量子影视 | [Link](https://lzizy.net) | [Link](https://cj.lziapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬量子资源 | [Link](https://cj.lzcaiji.com) | [Link](https://cj.lzcaiji.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬金鹰点播 | [Link](https://jinyingzy.com) | [Link](https://jinyingzy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬闪电资源 | [Link](https://shandianzy.com) | [Link](https://xsd.sdzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬非凡资源 | [Link](https://cj.ffzyapi.com) | [Link](https://api.ffzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬飘零资源 | [Link](https://p2100.net) | [Link](https://p2100.net/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞 CK-资源 | [Link](https://ckzy.me) | [Link](https://ckzy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞--AIvin- | [Link](http://lbapiby.com) | [Link](http://lbapiby.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞-大奶子- | [Link](https://apidanaizi.com) | [Link](https://apidanaizi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞-奥斯卡- | [Link](https://aosikazy.com) | [Link](https://aosikazy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞-美少女- | [Link](https://www.msnii.com) | [Link](https://www.msnii.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞-老色逼- | [Link](https://apilsbzy1.com) | [Link](https://apilsbzy1.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞-黄AVZY | [Link](https://www.pgxdy.com) | [Link](https://www.pgxdy.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞155-资源 | [Link](https://155zy2.com) | [Link](https://155api.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞jkun资源 | [Link](https://jkunzyapi.com) | [Link](https://jkunzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞souavZY | [Link](https://api.souavzyw.net) | [Link](https://api.souavzyw.net/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞丝袜资源 | [Link](https://siwazyw.tv) | [Link](https://siwazyw.tv/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞乐播资源 | [Link](https://lbapi9.com) | [Link](https://lbapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞优优资源 | [Link](https://www.yyzywcj.com) | [Link](https://www.yyzywcj.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞大地资源 | [Link](https://dadizy11.com) | [Link](https://dadiapi.com/feifei) | 不匹配 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞小鸡资源 | [Link](https://xiaojizy.live) | [Link](https://api.xiaojizy.live/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞杏吧资源 | [Link](https://xingba111.com) | [Link](https://xingba222.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞桃花资源 | [Link](https://thzy8.me) | [Link](https://thzy1.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞森林资源 | [Link](https://slapibf.com) | [Link](https://beiyong.slapibf.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞滴滴资源 | [Link](https://didizy.com) | [Link](https://api.ddapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞玉兔资源 | [Link](https://apiyutu.com) | [Link](https://apiyutu.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞番号资源 | [Link](http://fhapi9.com) | [Link](http://fhapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞白嫖资源 | [Link](https://www.kxgav.com) | [Link](https://www.kxgav.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞百万资源 | [Link](https://api.bwzym3u8.com) | [Link](https://api.bwzyz.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞精品资源 | [Link](https://www.jingpinx.com) | [Link](https://www.jingpinx.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞色猫资源 | [Link](https://semaozy1.com) | [Link](https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞豆豆资源 | [Link](https://doudouzy.com) | [Link](https://api.douapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞辣椒资源 | [Link](https://apilj.com) | [Link](https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞鲨鱼资源 | [Link](https://shayuapi.com) | [Link](https://shayuapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞黑料资源 | [Link](https://heiliaozy.cc) | [Link](https://www.heiliaozyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬新浪资源 | [Link](https://xinlangapi.com) | [Link](https://api.xinlangapi.com/xinlangapi.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬速播资源 | [Link](https://www.subozy.com) | [Link](https://subocaiji.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬金蝉影视 | [Link](https://zy.jinchancaiji.com) | [Link](https://zy.jinchancaiji.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬魔都动漫 | [Link](https://caiji.moduapi.cc) | [Link](https://caiji.moduapi.cc/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬魔都资源 | [Link](https://www.moduzy.net) | [Link](https://www.mdzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬鸭鸭资源 | [Link](https://yayazy3.com) | [Link](https://cj.yayazy.net/api.php/provide/vod) | ❌ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞奶香资源 | [Link](https://Naixxzy.com) | [Link](https://Naixxzy.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞细胞资源 | [Link](https://www.xxibaozyw.com) | [Link](https://www.xxibaozyw.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞香蕉资源 | [Link](https://www.xiangjiaozyw.com) | [Link](https://www.xiangjiaozyw.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🔞黄色仓库 | [Link](https://hsckzy.xyz) | [Link](https://hsckzy.xyz/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ |
-| ✅ | 🎬U酷影视 | [Link](https://www.ukuzy.com) | [Link](https://api.ukuapi88.com/api.php/provide/vod) | ✅ | 27 | 3 | 90.0% | ✅✅✅✅❌✅✅ |
-| 🚨 | 🔞麻豆视频 | [Link](https://91md.me) | [Link](https://91md.me/api.php/provide/vod) | ❌ | 22 | 8 | 73.3% | ✅✅❌❌❌❌❌ |
-| ✅ | 🔞-幸资源- | [Link](https://xzytv.com) | [Link](https://xzybb2.com/api.php/provide/vod) | ✅ | 17 | 13 | 56.7% | ✅✅✅✅✅✅✅ |
-| 🚨 | 🔞91-精品- | [Link](https://91jpzyw.com) | [Link](https://91jpzyw.com/api.php/provide/vod) | ❌ | 5 | 25 | 16.7% | ❌❌❌❌❌❌❌ |
-| 🚨 | 🎬山海资源 | [Link](https://zy.sh0o.cn) | [Link](https://zy.sh0o.cn/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ |
-<!-- API_TABLE_END -->
+点播源
+名称	地址	类型
+OK猫开发	http://ok213.top/tv	源
+饭太硬	http://www.饭太硬.com/tv	源
+liucn	https://raw.liucn.cc/box/m.json	源
+王小二	https://9280.kstore.space/wex.json	源
+qist	https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json	源
+讴歌	https://xn--xkkx-rp5imh.v.nxog.top/api.php?id=1	源
+高天流云	https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json	源
+肥猫	http://肥猫.com/	源
+盒子迷	https://盒子迷.top/禁止贩卖	源
+摸鱼儿	http://我不是.摸鱼儿.com	源
+zwc365	http://kv.zwc365.com/tv.json	源
+唐三	http://6080.eu.org/	源导航
+FongMi	https://fongmi.eu.org/	源导航
+APP宫殿	https://gongdian.top/tvbox/nanfeng/api.json	源
+Guovin	https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json	源
+安卓哥	https://安卓哥.com	源
+点播源容易失效和遭人举报，建议关注原发布地址。付费源不可信，毕竟不是版权方。推荐饭太硬以及他主页推荐的源。这些点播源一般影视APP（OK/FM版）都能用。
+
+OK猫开发(OK影视)TG 饭太硬TG 王小二TG FM影视TG 肥羊TG
+
+EPG
+112114
+https://epg.112114.xyz/pp.xml
+112114无法打开试试镜像：
+
+https://live.fanmingming.com/e.xml
+https://live.fanmingming.cn/e.xml
+ERW
+https://e.erw.cc/e.xml
+推荐软件
+空壳软件
+名称	地址	备注
+TVBOX	https://github.com/o0HalfLife0o/TVBoxOSC/releases	Android电视
+影视(FongMi)	https://github.com/FongMi/Release/tree/fongmi/apk	Android电视/手机
+OK影视	https://github.com/FongMi/Release/tree/okjack/apk/release	Android电视/手机
+OrionTV	https://github.com/zimplexing/OrionTV/releases	Android电视
+MoonTV	https://github.com/MoonTechLab/LunaTV	需自己构建
+TV-Multiplatform	https://github.com/Greatwallcorner/TV-Multiplatform/releases	MacOS Windows Linux
+影视仓	https://pd.qq.com/s/208da3cbs	Android电视/手机
+TiviMate	https://tivimate.com/	Android电视
+天光云影	https://github.com/mytv-android/mytv-android	Android电视
+ZyPlayer	https://github.com/Hiram-Wong/ZyPlayer/releases	MacOS Windows Linux
+M3U IPTV	https://m3u-ip.tv/	Android电视
+APTV	https://apps.apple.com/cn/app/aptv/id1630403500	iOS
+CMSPlayer	https://apps.apple.com/us/app/cmsplayer/id6450680262	美区iOS
+XPTV	https://apps.apple.com/us/app/xptv/id6459409368	美区iOS
+SteveWatch	https://apps.apple.com/us/app/stevewatch/id6478312533	美区iOS
+Kodi	https://kodi.tv/	全平台
+Potplayer	https://potplayer.tv/	Windows
+IPTV Player	https://iptvplayer.stream	Web
+ZY Player	https://github.com/Hunlongyu/ZY-Player	Windows/Mac/Linux
+ZY Player	https://github.com/cuiocean/ZY-Player-APP	Android/iOS
+TVBOX、影视和影视仓关系图：
+
+TVBOX直播没有台标没有节目单，影视APP有。TiviMate不能扫码输入源，另外自动更新源和节目单需要付费解锁高级版。Kodi需要安装后设置中文，IPTV插件安装需要科学上网。TiviMate、Kodi和iOS的软件只能看直播。
+
+自带源软件
+电视直播 安卓电视APP
+
+名称	地址	备注
+油桃TV	https://www.utao.tv/	影视和直播
+电视浏览器	https://github.com/Eanya-Tonic/CCTV_Viewer/releases	官方源
+WebView 电视	https://github.com/hxh19950701/WebViewTvLive/releases	官方源
+大吉电视	https://www.dajitv.com/dajitv-app/	免费受限
+GD影视	https://www.gongdian.top/?p=4761	OK影视内置源
+影用仓库	https://wmdz.com/	电视APP合集
+OurTV	https://github.com/andandroidor/ourtv/releases	有广告但不影响观看
+我的电视	https://github.com/yaoxieyoulei/mytv-android/releases	可配置源
+我的电视	https://github.com/lizongying/my-tv/releases	少量台
+我的电视·一	https://github.com/lizongying/my-tv-1/releases	可配置源
+小微直播	http://www.xiaoweizhibo.net/mobile.html	第三方
+我的电视·〇	https://github.com/lizongying/my-tv-0/releases	内置源
+小飞电视	https://y977.com/tv/	天光云影内置源
+也可以用影视APP只设置直播源再设置打开软件启动直播。原版“我的电视”是lizongying开发，已经停更。202412021左右，接手版“我的电视”已删库，范明明.com域名被墙。
+
+电视浏览器
+名称	地址	备注
+BrowseHere	v6.44.011	官方
+TV Bro	https://github.com/truefedex/tv-bro/releases	开源
+GitHub镜像
+https://ghfast.top/
+https://gh-proxy.com/
+在国内网络无法打开GitHub相关地址时候使用，使用方法是在地址前加上面其中一个链接。举例：https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
+
+解决无法打开GitHub还有一种方法是更换DNS。DNS合集：https://dns.iui.im/ DNS测速：https://ping.sx/ping
+
+官方电视直播
+央视网：https://tv.cctv.com/live/
+央视影音（移动/桌面版）：https://app.cctv.com/
+央视频：https://www.yangshipin.cn/tv/home
+广东荔枝网：https://gdtv.cn/tvChannelDetail/51
+江苏荔枝网：https://live.jstv.com/
+广西网络广播电视台：https://tv.gxtv.cn/
+芒果TV：https://live.mgtv.com/
+新蓝网・浙江网台：https://www.cztv.com/liveTV
+官方APP等等
+谷歌搜索：地方+电视直播
+官方直播地址搜索：https://iptv-org.github.io/
+IPTV源搜索：https://tonkiang.us/ http://www.foodieguide.com/iptvsearch/
+第三方电视直播
+不推荐
+
+http://www.freeintertv.com/
+http://tv.haoqu99.com/
+https://345iptv.com/
 
 ---
 
@@ -537,6 +594,7 @@ console.log(`Request from: ${request.headers.get('cf-connecting-ip')}`)
 
 ## ⭐ Star History
 [![Star History](https://starchart.cc/hafrey1/LunaTV-config.svg?variant=light)](https://starchart.cc/hafrey1/LunaTV-config)
+
 
 
 
